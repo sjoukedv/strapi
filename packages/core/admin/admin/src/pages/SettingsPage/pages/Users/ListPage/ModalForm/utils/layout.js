@@ -37,7 +37,7 @@ const layout = [
   [
     {
       intlLabel: {
-        id: 'Auth.form.email.label',
+        id: 'global.email',
         defaultMessage: 'Email',
       },
       name: 'email',

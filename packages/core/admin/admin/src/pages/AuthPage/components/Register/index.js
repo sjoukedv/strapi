@@ -179,7 +179,7 @@ const Register = ({ fieldsToDisable, noSignin, onSubmit, schema }) => {
                     }
                     required
                     label={formatMessage({
-                      id: 'Auth.form.email.label',
+                      id: 'global.email',
                       defaultMessage: 'Email',
                     })}
                     type="email"

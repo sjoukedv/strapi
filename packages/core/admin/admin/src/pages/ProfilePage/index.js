@@ -229,7 +229,7 @@ const ProfilePage = () => {
                           </GridItem>
                           <GridItem s={12} col={6}>
                             <GenericInput
-                              intlLabel={{ id: 'Auth.form.email.label', defaultMessage: 'Email' }}
+                              intlLabel={{ id: 'global.email', defaultMessage: 'Email' }}
                               error={errors.email}
                               onChange={handleChange}
                               value={values.email || ''}

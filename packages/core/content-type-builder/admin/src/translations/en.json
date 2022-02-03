@@ -9,7 +9,6 @@
   "attribute.datetime": "Datetime",
   "attribute.dynamiczone": "Dynamic zone",
   "attribute.dynamiczone.description": "Dynamically pick component when editing content",
-  "attribute.email": "Email",
   "attribute.email.description": "Email field with validations format",
   "attribute.enumeration": "Enumeration",
   "attribute.enumeration.description": "List of values, then pick one",

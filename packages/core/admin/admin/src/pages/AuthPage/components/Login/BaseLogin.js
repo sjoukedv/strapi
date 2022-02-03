@@ -87,7 +87,7 @@ const Login = ({ onSubmit, schema, children }) => {
                   }
                   value={values.email}
                   onChange={handleChange}
-                  label={formatMessage({ id: 'Auth.form.email.label', defaultMessage: 'Email' })}
+                  label={formatMessage({ id: 'global.email', defaultMessage: 'Email' })}
                   placeholder={formatMessage({
                     id: 'Auth.form.email.placeholder',
                     defaultMessage: 'kai@doe.com',
