@@ -266,7 +266,7 @@ const ProfilePage = () => {
                       <Stack size={4}>
                         <Typography variant="delta" as="h2">
                           {formatMessage({
-                            id: 'Settings.profile.form.section.password.title',
+                            id: 'global.change-password',
                             defaultMessage: 'Change password',
                           })}
                         </Typography>

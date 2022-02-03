@@ -1,5 +1,6 @@
 {
   "global.see-more": "See more",
+  "global.change-password": "Change password",
   "Analytics": "Analytics",
   "Auth.components.Oops.text": "Your account has been suspended.",
   "Auth.components.Oops.text.admin": "If this is a mistake, please contact your administrator.",
@@ -11,7 +12,6 @@
   "Auth.form.button.login.strapi": "Log in via Strapi",
   "Auth.form.button.password-recovery": "Password Recovery",
   "Auth.form.button.register": "Let's start",
-  "Auth.form.button.reset-password": "Change password",
   "Auth.form.confirmPassword.label": "Confirmation Password",
   "Auth.form.currentPassword.label": "Current Password",
   "Auth.form.email.label": "Email",

@@ -161,7 +161,7 @@ const ForgotPassword = ({ onSubmit, schema }) => {
                   />
                   <Button fullwidth type="submit">
                     {formatMessage({
-                      id: 'Auth.form.button.reset-password',
+                      id: 'global.change-password',
                       defaultMessage: 'Change password',
                     })}
                   </Button>
