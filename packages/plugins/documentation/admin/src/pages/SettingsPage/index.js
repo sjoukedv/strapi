@@ -125,7 +125,7 @@ const SettingsPage = () => {
                           <GridItem col={6} s={12}>
                             <TextInput
                               label={formatMessage({
-                                id: getTrad('pages.SettingsPage.password.label'),
+                                id: 'global.password',
                                 defaultMessage: 'Password',
                               })}
                               name="password"

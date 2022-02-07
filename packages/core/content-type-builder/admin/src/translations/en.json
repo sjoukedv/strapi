@@ -19,7 +19,6 @@
   "attribute.null": " ",
   "attribute.number": "Number",
   "attribute.number.description": "Numbers (integer, float, decimal)",
-  "attribute.password": "Password",
   "attribute.password.description": "Password field with encryption",
   "attribute.relation": "Relation",
   "attribute.relation.description": "Refers to a Collection Type",

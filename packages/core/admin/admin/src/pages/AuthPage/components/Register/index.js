@@ -225,7 +225,7 @@ const Register = ({ fieldsToDisable, noSignin, onSubmit, schema }) => {
                     })}
                     required
                     label={formatMessage({
-                      id: 'Auth.form.password.label',
+                      id: 'global.password',
                       defaultMessage: 'Password',
                     })}
                     type={passwordShown ? 'text' : 'password'}
