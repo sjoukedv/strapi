@@ -80,7 +80,7 @@ describe('getGeneralLinks', () => {
       },
       {
         icon: 'shopping-basket',
-        label: 'app.components.LeftMenuLinkContainer.installNewPlugin',
+        label: 'global.marketplace',
         to: '/marketplace',
         isDisplayed: false,
         permissions: [
@@ -133,7 +133,7 @@ describe('getGeneralLinks', () => {
       },
       {
         icon: 'shopping-basket',
-        label: 'app.components.LeftMenuLinkContainer.installNewPlugin',
+        label: 'global.marketplace',
         to: '/marketplace',
         isDisplayed: false,
         permissions: [
@@ -229,7 +229,7 @@ describe('getGeneralLinks', () => {
       },
       {
         icon: 'shopping-basket',
-        label: 'app.components.LeftMenuLinkContainer.installNewPlugin',
+        label: 'global.marketplace',
         to: '/marketplace',
         isDisplayed: false,
         permissions: [],

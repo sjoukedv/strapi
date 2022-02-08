@@ -19,7 +19,7 @@ const initialState = {
     {
       icon: ShoppingCart,
       intlLabel: {
-        id: 'app.components.LeftMenuLinkContainer.installNewPlugin',
+        id: 'global.marketplace',
         defaultMessage: 'Marketplace',
       },
       to: '/marketplace',
