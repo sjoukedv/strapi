@@ -178,7 +178,7 @@ const CreatePage = () => {
                           <Box>
                             <Typography fontWeight="bold">
                               {formatMessage({
-                                id: 'Settings.roles.form.title',
+                                id: 'global.details',
                                 defaultMessage: 'Details',
                               })}
                             </Typography>

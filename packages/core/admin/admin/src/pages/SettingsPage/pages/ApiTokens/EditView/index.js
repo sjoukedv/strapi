@@ -185,7 +185,7 @@ const ApiTokenCreateView = () => {
                     <Stack size={4}>
                       <Typography variant="delta" as="h2">
                         {formatMessage({
-                          id: 'Settings.apiTokens.details',
+                          id: 'global.details',
                           defaultMessage: 'Details',
                         })}
                       </Typography>

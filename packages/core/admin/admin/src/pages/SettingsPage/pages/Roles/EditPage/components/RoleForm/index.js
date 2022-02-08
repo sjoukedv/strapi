@@ -24,7 +24,7 @@ const RoleForm = ({ disabled, role, values, errors, onChange, onBlur }) => {
                   {role
                     ? role.name
                     : formatMessage({
-                        id: 'Settings.roles.form.title',
+                        id: 'global.details',
                         defaultMessage: 'Details',
                       })}
                 </Typography>

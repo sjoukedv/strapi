@@ -17,7 +17,6 @@ import { NotAllowedInput, useCMEditViewDataManager, useQueryParams } from '@stra
 import { stringify } from 'qs';
 import axios from 'axios';
 import { axiosInstance } from '../../../core/utils';
-import { getTrad } from '../../utils';
 import Label from './Label';
 import SelectOne from '../SelectOne';
 import SelectMany from '../SelectMany';
@@ -249,7 +248,7 @@ function SelectWrapper({
   if (isSingle && value && shouldDisplayRelationLink) {
     link = (
       <Link to={{ pathname: to, state: { from: pathname }, search: searchToPersist }}>
-        {formatMessage({ id: getTrad('containers.Edit.seeDetails'), defaultMessage: 'Details' })}
+        {formatMessage({ id: 'global.details', defaultMessage: 'Details' })}
       </Link>
     );
   }
