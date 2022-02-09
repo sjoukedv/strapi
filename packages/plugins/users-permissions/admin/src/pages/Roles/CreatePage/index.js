@@ -142,7 +142,7 @@ const EditPage = () => {
                           value={values.description || ''}
                           onChange={handleChange}
                           label={formatMessage({
-                            id: 'Settings.roles.form.input.description',
+                            id: 'global.description',
                             defaultMessage: 'Description',
                           })}
                           error={

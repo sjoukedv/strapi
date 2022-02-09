@@ -78,7 +78,7 @@ const Plugins = () => {
                 <Th>
                   <Typography variant="sigma" textColor="neutral600">
                     {formatMessage({
-                      id: 'Settings.roles.list.header.description',
+                      id: 'global.description',
                       defaultMessage: 'description',
                     })}
                   </Typography>

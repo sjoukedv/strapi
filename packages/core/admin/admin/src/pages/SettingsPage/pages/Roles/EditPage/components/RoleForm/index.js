@@ -70,7 +70,7 @@ const RoleForm = ({ disabled, role, values, errors, onChange, onBlur }) => {
               <Textarea
                 disabled={disabled}
                 label={formatMessage({
-                  id: 'Settings.roles.form.input.description',
+                  id: 'global.description',
                   defaultMessage: 'Description',
                 })}
                 name="description"

@@ -219,7 +219,7 @@ const CreatePage = () => {
                         <GridItem col={6}>
                           <Textarea
                             label={formatMessage({
-                              id: 'Settings.roles.form.input.description',
+                              id: 'global.description',
                               defaultMessage: 'Description',
                             })}
                             name="description"

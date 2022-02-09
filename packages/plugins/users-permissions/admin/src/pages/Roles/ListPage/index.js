@@ -167,7 +167,7 @@ const RoleListPage = () => {
                   <Th>
                     <Typography variant="sigma" textColor="neutral600">
                       {formatMessage({
-                        id: getTrad('Roles.description'),
+                        id: 'global.description',
                         defaultMessage: 'Description',
                       })}
                     </Typography>
