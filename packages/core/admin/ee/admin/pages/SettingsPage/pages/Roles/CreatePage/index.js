@@ -112,7 +112,7 @@ const CreatePage = () => {
   };
 
   const defaultDescription = `${formatMessage({
-    id: 'Settings.roles.form.created',
+    id: 'global.created',
     defaultMessage: 'Created',
   })} ${moment().format('LL')}`;
 

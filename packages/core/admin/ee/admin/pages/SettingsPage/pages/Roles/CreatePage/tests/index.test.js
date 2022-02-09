@@ -32,7 +32,7 @@ jest.mock('@strapi/helper-plugin', () => ({
 
 const makeApp = history => (
   <IntlProvider
-    messages={{ 'Settings.roles.form.created': 'Created' }}
+    messages={{ 'global.created': 'Created' }}
     textComponent="span"
     locale="en"
     defaultLocale="en"

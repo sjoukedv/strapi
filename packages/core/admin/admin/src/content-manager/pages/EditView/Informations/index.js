@@ -48,7 +48,7 @@ const Informations = () => {
         <Flex justifyContent="space-between">
           <Typography fontWeight="bold">
             {formatMessage({
-              id: getTrad('containers.Edit.information.created'),
+              id: 'global.created',
               defaultMessage: 'Created',
             })}
           </Typography>
