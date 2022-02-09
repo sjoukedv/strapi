@@ -28,7 +28,6 @@
   "HeaderNav.link.advancedSettings": "Advanced settings",
   "HeaderNav.link.emailTemplates": "Email templates",
   "HeaderNav.link.providers": "Providers",
-  "HeaderNav.link.roles": "Roles",
   "Plugin.permissions.plugins.description": "Define all allowed actions for the {name} plugin.",
   "Plugins.header.description": "Only actions bound by a route are listed below.",
   "Plugins.header.title": "Permissions",

@@ -26,7 +26,7 @@ export default {
       [
         {
           intlLabel: {
-            id: getTrad('HeaderNav.link.roles'),
+            id: getTrad('global.roles'),
             defaultMessage: 'Roles',
           },
           id: 'roles',

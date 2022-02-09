@@ -253,7 +253,7 @@ const EditPage = ({ canUpdate }) => {
                     <Stack size={4}>
                       <Typography variant="delta" as="h2">
                         {formatMessage({
-                          id: 'app.components.Users.ModalCreateBody.block-title.login',
+                          id: 'global.roles',
                           defaultMessage: "User's role",
                         })}
                       </Typography>

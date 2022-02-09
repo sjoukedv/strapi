@@ -114,7 +114,7 @@ const RoleListPage = () => {
           </Button>
         }
         title={formatMessage({
-          id: 'Settings.roles.title',
+          id: 'global.roles',
           defaultMessage: 'roles',
         })}
         subtitle={formatMessage({

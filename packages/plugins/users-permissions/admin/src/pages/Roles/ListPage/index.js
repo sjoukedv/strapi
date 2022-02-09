@@ -93,7 +93,7 @@ const RoleListPage = () => {
   };
 
   const pageTitle = formatMessage({
-    id: getTrad('HeaderNav.link.roles'),
+    id: getTrad('global.roles'),
     defaultMessage: 'Roles',
   });
 
@@ -122,7 +122,7 @@ const RoleListPage = () => {
       <Main aria-busy={isLoading}>
         <HeaderLayout
           title={formatMessage({
-            id: 'Settings.roles.title',
+            id: 'global.roles',
             defaultMessage: 'Roles',
           })}
           subtitle={formatMessage({

@@ -249,7 +249,7 @@ const RoleListPage = () => {
   }
 
   const title = formatMessage({
-    id: 'Settings.roles.title',
+    id: 'global.roles',
     defaultMessage: 'roles',
   });
 

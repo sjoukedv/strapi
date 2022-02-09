@@ -25,7 +25,7 @@ const init = (initialState, { settings, shouldUpdateStrapi }) => {
       intlLabel: { id: 'Settings.permissions', defaultMessage: 'Administration Panel' },
       links: [
         {
-          intlLabel: { id: 'Settings.permissions.menu.link.roles.label' },
+          intlLabel: { id: 'global.roles' },
           to: '/settings/roles',
           id: 'roles',
           isDisplayed: false,
