@@ -93,7 +93,7 @@ const RoleListPage = () => {
   };
 
   const pageTitle = formatMessage({
-    id: getTrad('global.roles'),
+    id: 'global.roles',
     defaultMessage: 'Roles',
   });
 
