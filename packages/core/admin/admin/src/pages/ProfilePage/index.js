@@ -195,7 +195,7 @@ const ProfilePage = () => {
                       <Stack size={4}>
                         <Typography variant="delta" as="h2">
                           {formatMessage({
-                            id: 'Settings.profile.form.section.profile.title',
+                            id: 'global.profile',
                             defaultMessage: 'Profile',
                           })}
                         </Typography>

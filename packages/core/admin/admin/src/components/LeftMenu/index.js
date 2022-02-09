@@ -160,7 +160,7 @@ const LeftMenu = ({ generalSectionLinks, pluginsSectionLinks }) => {
               <LinkUser tabIndex={0} onClick={handleToggleUserLinks} to="/me">
                 <Typography>
                   {formatMessage({
-                    id: 'app.components.LeftMenu.profile',
+                    id: 'global.profile',
                     defaultMessage: 'Profile',
                   })}
                 </Typography>
