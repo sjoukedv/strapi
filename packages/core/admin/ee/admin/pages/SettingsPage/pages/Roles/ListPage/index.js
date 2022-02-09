@@ -323,7 +323,7 @@ const RoleListPage = () => {
                 <Th>
                   <Typography variant="sigma" textColor="neutral600">
                     {formatMessage({
-                      id: 'Settings.roles.list.header.users',
+                      id: 'global.users',
                       defaultMessage: 'Users',
                     })}
                   </Typography>

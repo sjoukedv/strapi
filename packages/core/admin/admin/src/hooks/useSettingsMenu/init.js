@@ -32,7 +32,7 @@ const init = (initialState, { settings, shouldUpdateStrapi }) => {
           permissions: adminPermissions.settings.roles.main,
         },
         {
-          intlLabel: { id: 'Settings.permissions.menu.link.users.label' },
+          intlLabel: { id: 'global.users' },
           // Init the search params directly
           to: '/settings/users?pageSize=10&page=1&sort=firstname',
           id: 'users',
