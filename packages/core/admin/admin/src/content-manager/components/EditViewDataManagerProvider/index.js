@@ -308,7 +308,8 @@ const EditViewDataManagerProvider = ({
         const errorPayload = err.response.data.error.details.errors;
         const validationErrors = errorPayload.reduce((acc, err) => {
           acc[err.path[0]] = {
-            id: err.name,
+            // err.name is "ValidationError" at this point
+            id: `components.Input.error.validation.${err.name}`,
           };
 
           return acc;
