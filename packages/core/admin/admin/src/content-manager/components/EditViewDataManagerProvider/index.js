@@ -307,7 +307,7 @@ const EditViewDataManagerProvider = ({
       } catch (err) {
         const errorPayload = err.response.data.error.details.errors;
         const validationErrors = errorPayload.reduce((acc, err) => {
-          acc[err.path[0]] = {
+          acc[err.path.join('.')] = {
             // err.name is "ValidationError" at this point
             id: `components.Input.error.validation.${err.name}`,
           };
