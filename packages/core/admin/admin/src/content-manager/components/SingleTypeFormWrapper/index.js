@@ -211,15 +211,19 @@ const SingleTypeFormWrapper = ({ allLayoutData, children, slug }) => {
         setIsCreatingEntry(false);
 
         dispatch(setStatus('resolved'));
+
+        return Promise.resolve(data);
       } catch (err) {
         trackUsageRef.current('didNotCreateEntry', { error: err, trackerProperty });
 
-        displayErrors(err);
+        // displayErrors(err);
 
         dispatch(setStatus('resolved'));
+
+        return Promise.reject(err);
       }
     },
-    [cleanReceivedData, displayErrors, slug, dispatch, rawQuery, toggleNotification, setCurrentStep]
+    [cleanReceivedData, slug, dispatch, rawQuery, toggleNotification, setCurrentStep]
   );
   const onPublish = useCallback(async () => {
     try {
@@ -267,15 +271,19 @@ const SingleTypeFormWrapper = ({ allLayoutData, children, slug }) => {
         dispatch(submitSucceeded(cleanReceivedData(data)));
 
         dispatch(setStatus('resolved'));
+
+        return Promise.resolve(data);
       } catch (err) {
-        displayErrors(err);
+        // displayErrors(err);
 
         trackUsageRef.current('didNotEditEntry', { error: err, trackerProperty });
 
         dispatch(setStatus('resolved'));
+
+        return Promise.reject(err);
       }
     },
-    [cleanReceivedData, displayErrors, slug, dispatch, rawQuery, toggleNotification]
+    [cleanReceivedData, slug, dispatch, rawQuery, toggleNotification]
   );
 
   // The publish and unpublish method could be refactored but let's leave the duplication for now

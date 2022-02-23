@@ -271,14 +271,15 @@ const CollectionTypeFormWrapper = ({ allLayoutData, children, slug, id, origin }
         dispatch(setStatus('resolved'));
 
         replace(`/content-manager/collectionType/${slug}/${data.id}${rawQuery}`);
+
+        return Promise.resolve(data);
       } catch (err) {
         trackUsageRef.current('didNotCreateEntry', { error: err, trackerProperty });
         // I'd need to hide the error message for UID fields here
         // displayErrors(err);
         dispatch(setStatus('resolved'));
 
-        // I'd need to re-throw the error here, so it can be catched again
-        throw err;
+        return Promise.reject(err);
       }
     },
     [cleanReceivedData, replace, slug, dispatch, rawQuery, toggleNotification, setCurrentStep]
