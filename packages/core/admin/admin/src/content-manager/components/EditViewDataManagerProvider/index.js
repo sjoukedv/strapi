@@ -290,23 +290,37 @@ const EditViewDataManagerProvider = ({
       e.preventDefault();
       let errors = {};
 
-      // First validate the form
       try {
         await yupSchema.validate(modifiedData, { abortEarly: false });
+      } catch (err) {
+        errors = getYupInnerErrors(err);
+      }
 
+      try {
         const formData = createFormData(modifiedData);
 
         if (isCreatingEntry) {
-          onPost(formData, trackerProperty);
+          await onPost(formData, trackerProperty);
         } else {
-          onPut(formData, trackerProperty);
+          await onPut(formData, trackerProperty);
         }
       } catch (err) {
-        console.log('ValidationError');
-        console.log(err);
+        const errorPayload = err.response.data.error.details.errors;
+        const validationErrors = errorPayload.reduce((acc, err) => {
+          acc[err.path[0]] = {
+            id: err.name,
+          };
 
-        errors = getYupInnerErrors(err);
+          return acc;
+        }, {});
 
+        errors = {
+          ...errors,
+          ...validationErrors,
+        };
+      }
+
+      if (Object.keys(errors).length > 0) {
         toggleNotification({
           type: 'warning',
           message: {

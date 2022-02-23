@@ -203,7 +203,6 @@ const CollectionTypeFormWrapper = ({ allLayoutData, children, slug, id, origin }
   const displayErrors = useCallback(
     err => {
       const errorPayload = err.response.data;
-      console.error(errorPayload);
 
       let errorMessage = get(errorPayload, ['error', 'message'], 'Bad Request');
 
@@ -274,20 +273,14 @@ const CollectionTypeFormWrapper = ({ allLayoutData, children, slug, id, origin }
         replace(`/content-manager/collectionType/${slug}/${data.id}${rawQuery}`);
       } catch (err) {
         trackUsageRef.current('didNotCreateEntry', { error: err, trackerProperty });
-        displayErrors(err);
+        // displayErrors(err);
         dispatch(setStatus('resolved'));
+
+        // I'd need to re-throw the error here, so it can be catched again
+        throw err;
       }
     },
-    [
-      cleanReceivedData,
-      displayErrors,
-      replace,
-      slug,
-      dispatch,
-      rawQuery,
-      toggleNotification,
-      setCurrentStep,
-    ]
+    [cleanReceivedData, replace, slug, dispatch, rawQuery, toggleNotification, setCurrentStep]
   );
 
   const onPublish = useCallback(async () => {
